@@ -1,1 +1,56 @@
+#Abrir um terminal Linux e executar o script para inicializar os serviços do Spark:
+~/scripts/sparkdev/training_setup_sparkdev.sh
 
+#Utilizando o editor do Linux crie um arquivo de texto de teste no Linux com o seguinte conteúdo:
+gedit /home/training/teste_spark.log
+
+#Conteúdo do arquivo:
+# Inicio
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+Teste Spark !!!
+# Fim
+
+#Abra o pyspark (Spark Shell para interação utilizando a linguagem Python):
+pyspark
+
+#Crie um RDD abrindo o arquivo texto
+meusdados = sc.textFile("file:/home/training/teste_spark.log")
+
+#Conte as linhas do RDD meusdados. E verifique o tempo de execução:
+meusdados.count()
+
+#Armazene no cache (em memmória) o RDD meusdados:
+meusdados.cache()
+
+#Conte novamente o meusdados mais 2 vezes. Repare na mudança na velocidade do tempo de execução.
+meusdados.count()
