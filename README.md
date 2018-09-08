@@ -1,2 +1,2 @@
 # Spark-RDD-Exercices
-Exercício de utilização de RDDs em Spark
+Exercício de pratica de utilização de RDDs em Spark
